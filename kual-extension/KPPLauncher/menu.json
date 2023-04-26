@@ -1,0 +1,5 @@
+{
+	"items": [
+		{"name": "KPPLauncher", "priority": 1, "action": "bin/kpplauncher.sh /mnt/us/documents/Wordle.app"}
+	]
+}
