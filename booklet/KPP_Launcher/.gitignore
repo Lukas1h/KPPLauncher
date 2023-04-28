@@ -11,3 +11,4 @@ lib/concierge-1.0.0.jar
 lib/json_simple-1.1.jar
 .project
 build-local.properties
+*.bin
