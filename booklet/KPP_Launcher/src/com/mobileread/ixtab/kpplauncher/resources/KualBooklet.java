@@ -26,7 +26,7 @@ public class KualBooklet extends AbstractBooklet {
 			new String[] { "/bin/sh", "-c", "{ /mnt/us/koreader/koreader.sh ".concat(contentURI.toString().replace("app://com.mobileread.ixtab.kpplauncher","")).concat(" ; } 2>>/var/tmp/KPPL.log ") }, null,
 			new File("/mnt/us/koreader/")).waitFor();
 			new KualLog().append("Done Closing!");
-			Runtime.getRuntime().exec("lipc-set-prop com.lab126.appmgrd backward 0");
+			Runtime.getRuntime().exec("lipc-set-prop com.lab126.appmgrd start app://com.lab126.KPPMainApp?view=KPP_LIBRARY");
 		} catch (Throwable t) {
 			throw new RuntimeException(t);
 		}
