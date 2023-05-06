@@ -1,6 +1,5 @@
 {
 	"items": [
-		{"name": "KPPLauncher", "priority": 1, "action": "bin/kpplauncher.sh \"$(find /mnt/us/documents -name "*.app" -type f | head -1)"\
-"}
+		{"name": "KPPLauncher", "priority": 1, "action": "bin/kpplauncher.sh \"$(find /mnt/us/documents -name \\\"*.app\\\" -type f | head -1)\""}
 	]
 }
