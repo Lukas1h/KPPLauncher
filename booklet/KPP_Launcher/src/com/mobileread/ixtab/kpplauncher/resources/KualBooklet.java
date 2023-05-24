@@ -19,13 +19,16 @@ import com.mobileread.ixtab.kpplauncher.resources.KualLog;
 public class KualBooklet extends AbstractBooklet {
 
 	public void start(URI contentURI) {
-		new KualLog().append("HELLO FROM OPEN NEW! HI 10.10--");
-		new KualLog().append("URI " + contentURI.toString().replace("app://com.mobileread.ixtab.kpplauncher",""));
+		new KualLog().append("KPPLauncher Started With URI " + contentURI.toString().replace("app://com.mobileread.ixtab.kpplauncher",""));
 		try {
+			new KualLog().append("Running command:");
+			new KualLog().append("/bin/sh" + " -c" + " { /mnt/us/kpplauncher/kpplauncher.sh ".concat(contentURI.toString().replace("app://com.mobileread.ixtab.kpplauncher","")).concat(" ; } 2>>/var/tmp/KPPL.log "));
 			Runtime.getRuntime().exec(
-			new String[] { "/bin/sh", "-c", "{ /mnt/us/koreader/koreader.sh ".concat(contentURI.toString().replace("app://com.mobileread.ixtab.kpplauncher","")).concat(" ; } 2>>/var/tmp/KPPL.log ") }, null,
+				new String[] { "/bin/sh", "-c", " /mnt/us/kpplauncher/kpplauncher.sh ".concat(contentURI.toString().replace("app://com.mobileread.ixtab.kpplauncher","")).concat("  2>>/var/tmp/KPPL.log ") }, null,
+			// new String[] { "/mnt/us/koreader/koreader.sh ".concat(contentURI.toString().replace("app://com.mobileread.ixtab.kpplauncher","")) }, null,
 			new File("/mnt/us/koreader/")).waitFor();
-			new KualLog().append("Done Closing!");
+			new KualLog().append("KPP Application Closed.");
+			new KualLog().append("Closing KPPLauncher");
 			Runtime.getRuntime().exec("lipc-set-prop com.lab126.appmgrd start app://com.lab126.KPPMainApp?view=KPP_LIBRARY");
 		} catch (Throwable t) {
 			throw new RuntimeException(t);
