@@ -11,8 +11,11 @@ touch "/mnt/us/started"
 # Pull libOTAUtils for logging & progress handling
 [ -f ./libotautils5 ] && source ./libotautils5
 
+touch "/mnt/us/v0.6installing"
 touch "/mnt/us/sourcedlib"
 otautils_update_progressbar
+
+rm -f /opt/amazon/ebook/booklet/KPPLBooklet.jar
 
 logmsg "I" "install" "" "installing booklet"
 cp -f "KPPLBooklet.jar" "/opt/amazon/ebook/booklet/KPPLBooklet.jar"
