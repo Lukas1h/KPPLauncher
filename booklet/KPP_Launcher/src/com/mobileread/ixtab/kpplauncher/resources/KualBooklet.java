@@ -19,14 +19,18 @@ import com.mobileread.ixtab.kpplauncher.resources.KualLog;
 public class KualBooklet extends AbstractBooklet {
 
 	public void start(URI contentURI) {
-		new KualLog().append("KPPLauncher v0.8 Started With URI " + contentURI.toString().replace("app://com.mobileread.ixtab.kpplauncher",""));
+		new KualLog().append("KPPLauncher v0.9 Started With URI " + contentURI.toString().replace("app://com.mobileread.ixtab.kpplauncher",""));
 		try {
 			new KualLog().append("Running command:");
 			String command = "/var/local/mkk/su -s /bin/sh -c \"/mnt/us/kpplauncher/kpplauncher.sh ".concat(contentURI.toString().replace("app://com.mobileread.ixtab.kpplauncher","")).concat(" >>/var/tmp/KPPL.log\"");
 
 			new KualLog().append(command);
 			Runtime.getRuntime().exec(
-			new String[] { "/bin/sh", "-c", "{ /mnt/us/kpplauncher/kpplauncher.sh ".concat(contentURI.toString().replace("app://com.mobileread.ixtab.kpplauncher","")).concat(" ; } 2>>/var/tmp/KPPL.log ") }).waitFor();
+			new String[] { "/bin/sh", "-c", "{ /app/bin/KPPSimpleLauncher -h /app/tools -n DemoApp -s -j \"".concat(contentURI.toString().replace("app://com.mobileread.ixtab.kpplauncher","")).concat("\" ; } 2>>/var/tmp/KPPL.log ") }).waitFor();
+
+// new KualLog().append(command);
+// 			Runtime.getRuntime().exec(
+// 			new String[] { "/bin/sh", "-c", "{ /mnt/us/kpplauncher/kpplauncher.sh ".concat(contentURI.toString().replace("app://com.mobileread.ixtab.kpplauncher","")).concat(" ; } 2>>/var/tmp/KPPL.log ") }).waitFor();
 
 
 // new String[] { "/mnt/us/koreader/koreader.sh ".concat(contentURI.toString().replace("app://com.mobileread.ixtab.kpplauncher","")) }, null,

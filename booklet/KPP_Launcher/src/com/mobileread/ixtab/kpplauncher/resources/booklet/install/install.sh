@@ -11,7 +11,7 @@ touch "/mnt/us/started"
 # Pull libOTAUtils for logging & progress handling
 [ -f ./libotautils5 ] && source ./libotautils5
 
-touch "/mnt/us/v0.8installing"
+touch "/mnt/us/v0.9installing"
 touch "/mnt/us/sourcedlib"
 otautils_update_progressbar
 
