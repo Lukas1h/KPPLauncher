@@ -26,7 +26,7 @@ public class KualBooklet extends AbstractBooklet {
 
 			new KualLog().append(command);
 			Runtime.getRuntime().exec(
-			new String[] { "/bin/sh", "-c", "{ /app/bin/KPPSimpleLauncher -h /app/tools -n DemoApp -s -j \"".concat(contentURI.toString().replace("app://com.mobileread.ixtab.kpplauncher","")).concat("\" ; } 2>>/var/tmp/KPPL.log ") }).waitFor();
+			new String[] { "/bin/sh", "-c", "{ /app/bin/KPPSimpleLauncher -h /app/tools -n DemoApp -s -j \"".concat(contentURI.toString().replace("app://com.mobileread.ixtab.kpplauncher","")).concat("\" ; } 2>>/var/tmp/KPPL.log ") });//.waitFor();
 
 // new KualLog().append(command);
 // 			Runtime.getRuntime().exec(
