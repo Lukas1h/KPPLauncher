@@ -4,8 +4,7 @@
 ## Instalation
 1. Grab the newest release. 
 2. Drop the `Update_KPPLBooklet__install.bin` in your `mrpackages` folder on your Kindle
-3. Drop the KPPLauncher folder into your `extensions` folder (also on your Kindle).
-4. Run `;log mrpi` in the search bar, or use KUAL to install the package.
+3. Run `;log mrpi` in the search bar, or use KUAL to install the package.
 
 ## Compatibility
 Should work on anything above `v5.15.1`.
