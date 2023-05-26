@@ -1,5 +1,5 @@
 # KPPLauncher
-[KPPLauncher](https://github.com/lukas1h/KPPLauncher) is a MRPI package and KUAL extension that allows `react-native-kindle` apps to be ran directly from the library, similer to the now unsuportted `kindlets`.
+[KPPLauncher](https://github.com/lukas1h/KPPLauncher) is a MRPI package and KUAL extension that allows[react-native-kindle](https://github.com/Lukas1h/react-native-kindle) apps to be ran directly from the library, similer to the now unsuportted `kindlets`.
 
 ## Instalation
 1. Grab the newest release. 
