@@ -13,6 +13,10 @@ Should work on anything above `v5.15.1`.
 `KPPLauncher` uses the obfusticated `Booklet` API and code from [KPVBooklet](https://github.com/koreader/kpvbooklet), which apparently doesn't work on newer frameware versions. That being said, it works on my device just fine, KP3 `v5.15.1`.
 
 
+## Applications
+- [💣 Minesweeper](https://github.com/Lukas1h/react-native-kindle-minesweeper)
+- Open a issue if you'd like your application to be added.
+
 ## Credits
 - [KPVBooklet](https://github.com/koreader/kpvbooklet)
 - [KOL](https://github.com/yparitcher/KUAL_Booklet)
