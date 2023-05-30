@@ -1,6 +1,12 @@
 # KPPLauncher
 [KPPLauncher](https://github.com/lukas1h/KPPLauncher) is a MRPI package and KUAL extension that allows [react-native-kindle](https://github.com/Lukas1h/react-native-kindle) apps to be ran directly from the library, similer to the now unsuportted `kindlets`.
 
+
+<img src="https://github.com/Lukas1h/KPPLauncher/assets/53445584/0e52cd39-6280-448e-bc43-d52ebe2775fd" width="22%">
+<img src="https://github.com/Lukas1h/KPPLauncher/assets/53445584/4ffb3a18-4dc3-4449-b064-491d39e33f3d" width="22%">
+<img src="https://github.com/Lukas1h/KPPLauncher/assets/53445584/35f5db57-b97a-47ba-95dc-72abd7515917" width="22%">
+<img src="https://github.com/Lukas1h/KPPLauncher/assets/53445584/876154c8-4fac-4bd7-b2ab-807a4d91a841" width="22%">
+
 ## Instalation
 1. Grab the newest release. 
 2. Drop the `Update_KPPLBooklet__install.bin` in your `mrpackages` folder on your Kindle
@@ -14,6 +20,7 @@ Should work on anything above `v5.15.1`.
 
 ## Applications
 - [💣 Minesweeper](https://github.com/Lukas1h/react-native-kindle-minesweeper)
+- [♟️ Chess](https://github.com/Lukas1h/react-native-chess)
 - Open a issue if you'd like your application to be added.
 
 ## Credits
