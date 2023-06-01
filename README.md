@@ -13,11 +13,14 @@
 3. Run `;log mrpi` in the search bar, or use KUAL to install the package.
 
 ## Compatibility
-Should work on anything above `v5.15.1`.
+Should work on anything above `v5.13.7`, as thats when React Native was released. 
 
-`KPPLauncher` uses the obfusticated `Booklet` API and code from [KPVBooklet](https://github.com/koreader/kpvbooklet), which apparently doesn't work on newer frameware versions. That being said, it works on my device just fine, KP3 `v5.15.1`.
+`KPPLauncher` uses the obfusticated `Booklet` API and code from [KPVBooklet](https://github.com/koreader/kpvbooklet), which apparently doesn't work on newer frameware versions. That being said, it works on my device just fine, PW3 `v5.15.1` and `v5.14.2`.
 
-
+### Tested on:
+- PW3 on `v5.14.2` *thanks, martinpham*
+- PW3 on `v5.15.1`
+ 
 ## Applications
 - [💣 Minesweeper](https://github.com/Lukas1h/react-native-kindle-minesweeper)
 - [♟️ Chess](https://github.com/Lukas1h/react-native-chess)
